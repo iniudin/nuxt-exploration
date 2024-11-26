@@ -1,5 +1,6 @@
 <script setup>
-const { data } = useFetch("http://localhost:4000/graphql", {
+const config = useRuntimeConfig();
+const { data } = useFetch(`${config.public.apiBase}/graphql`, {
   method: "POST",
   headers: {
     "Content-Type": "application/json",

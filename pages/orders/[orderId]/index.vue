@@ -1,7 +1,7 @@
 <script setup>
 const route = useRoute();
-
-const { data } = await useFetch(`http://localhost:4000/graphql`, {
+const config = useRuntimeConfig();
+const { data } = await useFetch(`${config.public.apiBase}/graphql`, {
   method: "POST",
   headers: {
     "Content-Type": "application/json",
@@ -49,7 +49,7 @@ const updateStatus = async (status) => {
         }
       }
     `;
-    const response = await fetch("http://localhost:4000/graphql", {
+    const response = await fetch(`${config.public.apiBase}/graphql`, {
       method: "POST",
       headers: {
         "Content-Type": "application/json",

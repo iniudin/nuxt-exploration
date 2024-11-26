@@ -2,7 +2,10 @@
 const navLinks = [
   { name: "Home", href: "/" },
   { name: "Date Difference", href: "/dates" },
-  { name: "Revamp", href: "http://github.com/revamp/revamp" },
+  {
+    name: "Revamp",
+    href: "https://github.com/iniudin/nuxt-graphql-exploration/tree/main/revamp",
+  },
   { name: "Orders", href: "/orders" },
 ];
 </script>

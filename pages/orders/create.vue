@@ -1,7 +1,8 @@
 <script setup>
+const config = useRuntimeConfig();
 const createOrder = async (items) => {
   try {
-    const response = await fetch("http://localhost:4000/graphql", {
+    const response = await fetch(`${config.public.apiBase}/graphql`, {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
