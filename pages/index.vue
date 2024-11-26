@@ -24,7 +24,11 @@
           It is a code that can query and calculate and convert to default units
           (kg).
         </p>
-        <NuxtLink to="/revamp" class="text-indigo-600">View Demo</NuxtLink>
+        <NuxtLink
+          to="https://github.com/iniudin/nuxt-graphql-exploration/tree/main/revamp"
+          class="text-indigo-600"
+          >View Demo</NuxtLink
+        >
       </div>
 
       <div class="mb-4 bg-gray-100 p-4 rounded shadow">
